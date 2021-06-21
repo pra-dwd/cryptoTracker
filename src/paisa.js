@@ -11,7 +11,7 @@ const paisa = ({ name,image, symbol, price, volume,marketcap,pricechange}) => {
                     <p className="symbol">{symbol}</p>
                 </div>
                 <div className="coin-data">
-                    <p className="coin-price">${price}</p>
+                    <p className="coin-price">${price.toLocaleString()}</p>
                     <p className="coin-volume">${volume.toLocaleString()}</p>
                     {
                         pricechange < 0 ? 
